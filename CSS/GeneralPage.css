@@ -4,6 +4,10 @@ body{
    text-align: center;
 }
 
+.img_card{
+   width:100%;
+}
+
 .grid-container{
    display: grid;
    grid-gap: 10px;
@@ -53,4 +57,35 @@ footer{
    background:#003800;
    border: 30px solid goldenrod
 }
+
+@media screen and (max-width:959px){
+   body{
+      width: 100%;
+   }
+
+   header{
+      width:100%
+   }
+
+   input{
+      width:100%
+   }
+}
+
+@media screen and (max-width:640px){
+   body{
+      width:100%;
+   }
+
+   header{
+      width:100%
+   }
+
+   input{
+      width:100%
+   }
+}
+
+
+
 

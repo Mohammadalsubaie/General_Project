@@ -1,18 +1,18 @@
 @import "home_nested.css";
 
 body{
- margin: 5px
+ margin: 5px;
 }
 
 #container{
-    background-image: url(../General_Project/imag/nowhere.jpg);
+    background-image: url(../imag/nowhere.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
     display:grid;
     grid-gap:10px;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 128px auto 220px ;
+    grid-template-rows: 128px auto 250px ;
     grid-auto-rows: minmax(100px,auto);
     grid-template-areas: 
     "h h h h h h h h h h h h"
@@ -43,8 +43,18 @@ body{
 .footer{
     grid-area: f;
 }
-   
-    
 
+@media screen and (max-width:959px){
+    #container{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:640px){
+    #container{
+        width: 100%;
+    }
+}
 
 
