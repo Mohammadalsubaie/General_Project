@@ -2,6 +2,7 @@
 
 body{
    text-align: center;
+   
 }
 
 .img_card{
@@ -58,34 +59,27 @@ footer{
    border: 30px solid goldenrod
 }
 
-@media screen and (max-width:959px){
-   body{
-      width: 100%;
+@media screen 
+  and (max-width: 912px){
+   .grid-container {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: 110px auto 200px ;
+      grid-auto-rows: minmax(100px,auto);
+      grid-template-areas:
+      "hd hd hd hd hd"
+      "mn mn mn mn mn"
+      "mn mn mn mn mn"
+      "mn mn mn mn mn"
+      "ad ad ad ad ad"
+      "ad ad ad ad ad"
+      "ad ad ad ad ad"
+      "ft ft ft ft ft "
    }
-
-   header{
-      width:100%
-   }
-
-   input{
-      width:100%
-   }
-}
-
-@media screen and (max-width:640px){
-   body{
-      width:100%;
-   }
-
-   header{
-      width:100%
-   }
-
-   input{
-      width:100%
-   }
+   
 }
 
 
 
-
+   
